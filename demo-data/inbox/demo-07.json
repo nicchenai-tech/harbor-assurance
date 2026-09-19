@@ -1,0 +1,10 @@
+{
+  "email_id": "demo-07",
+  "subject": "Scanned documents require evidence confirmation",
+  "from": "operations@example.test",
+  "body": "Please compare the scanned SI and draft BL and confirm all fields.",
+  "attachments": [
+    "attachments/demo-07-SI.pdf",
+    "attachments/demo-07-BL.pdf"
+  ]
+}

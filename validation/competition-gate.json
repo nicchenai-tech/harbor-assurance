@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "checks": {
+    "official_development_score_1": true,
+    "classification_macro_f1_1": true,
+    "positive_defect_sets_46_of_46": true,
+    "review_cases_20_of_20": true,
+    "regression_42_of_42": true,
+    "frozen_first_run_40_of_40": true,
+    "first_failures_retained": true,
+    "ablation_improves_22_to_40": true,
+    "public_demo_has_only_owned_ids": true,
+    "portable_container_present": true
+  },
+  "claim": "Measured development and authored-test evidence only; no comparison with unseen competitor systems or production accuracy claim."
+}

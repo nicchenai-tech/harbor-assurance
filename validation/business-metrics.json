@@ -1,0 +1,18 @@
+{
+  "emails": 520,
+  "comparison_requests": 220,
+  "cases_with_any_documents": 126,
+  "completed_document_comparisons": 109,
+  "matching": 63,
+  "mismatch": 46,
+  "review": 20,
+  "waiting": 91,
+  "classified_other": 300,
+  "batch_seconds": 41.346,
+  "median_email_ms": 0.2,
+  "p95_email_ms": 388.0,
+  "mean_email_ms": 78.79784615384615,
+  "cloud_model_calls": 0,
+  "cloud_inference_cost_usd": 0,
+  "cost_scope": "No API inference calls; excludes device, electricity and development costs."
+}

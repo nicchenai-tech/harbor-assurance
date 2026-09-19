@@ -1,0 +1,7 @@
+{
+  "email_id": "demo-05",
+  "subject": "Invoice amount clarification",
+  "from": "operations@example.test",
+  "body": "Please amend the invoice amount.",
+  "attachments": []
+}

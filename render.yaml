@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: harbor-assurance-demo
+    runtime: docker
+    region: singapore
+    plan: free
+    healthCheckPath: /api/health
+    autoDeploy: false
+    numInstances: 1
+    envVars:
+      - key: HARBOR_PUBLIC_DEMO
+        value: "1"
+      - key: HARBOR_OCR_BACKEND
+        value: tesseract
+      - key: HARBOR_DATA
+        value: /app/demo-data
+      - key: HARBOR_RUNTIME
+        value: /tmp/harbor-runtime

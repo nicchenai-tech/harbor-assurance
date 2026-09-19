@@ -1,0 +1,7 @@
+{
+  "email_id": "demo-04",
+  "subject": "Shipping instruction request",
+  "from": "operations@example.test",
+  "body": "Please send shipping instruction for the next sailing.",
+  "attachments": []
+}

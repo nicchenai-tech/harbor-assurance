@@ -1,0 +1,1 @@
+The automatic 520-email submission and competition pitch are in the private submission pack. Organizer inbox, attachments, answer file, generator and runtime database are intentionally absent from this source archive.

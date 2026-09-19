@@ -1,0 +1,10 @@
+{
+  "email_id": "demo-02",
+  "subject": "Equivalent weights: KG and MT",
+  "from": "operations@example.test",
+  "body": "Please compare the SI and draft BL and confirm all fields.",
+  "attachments": [
+    "attachments/demo-02-SI.txt",
+    "attachments/demo-02-BL.txt"
+  ]
+}

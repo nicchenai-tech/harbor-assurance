@@ -1,0 +1,10 @@
+{
+  "email_id": "demo-03",
+  "subject": "New template: notify contact needs confirmation",
+  "from": "operations@example.test",
+  "body": "Please compare the SI and draft BL and confirm all fields.",
+  "attachments": [
+    "attachments/demo-03-SI.txt",
+    "attachments/demo-03-BL.txt"
+  ]
+}

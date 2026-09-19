@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harbor-assurance"
+version = "0.1.0"
+description = "Evidence-led shipping document verification and human review"
+requires-python = ">=3.11"
+dependencies = ["pypdf", "python-docx", "openpyxl", "fastapi", "uvicorn", "python-multipart", "pypdfium2", "pillow"]
+
+[project.scripts]
+harbor = "harbor.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["harbor*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

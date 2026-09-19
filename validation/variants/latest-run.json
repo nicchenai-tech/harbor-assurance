@@ -1,0 +1,666 @@
+{
+  "suite": "42 authored semantic variants, no organizer labels",
+  "source_sha256": "fb5a2801e0469a3d0579e8bca9e0c57154a0ac4a4b973c91614cd11e3bff177f",
+  "specification_sha256": "086cbbc73464b58e25712f3409e07f1d6f6026d89ae0bc5dfb5b7d744bea805f",
+  "total": 42,
+  "passed": 42,
+  "elapsed_seconds": 29.48,
+  "rows": [
+    {
+      "name": "renamed_sources",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 187.77
+    },
+    {
+      "name": "reversed_attachment_order",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 139.64
+    },
+    {
+      "name": "random_message_identifier",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 163.77
+    },
+    {
+      "name": "case_variation",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 182.91
+    },
+    {
+      "name": "extra_spaces",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 157.46
+    },
+    {
+      "name": "company_punctuation",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 168.49
+    },
+    {
+      "name": "notify_synonym",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 139.71
+    },
+    {
+      "name": "ports_synonyms",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 200.06
+    },
+    {
+      "name": "quantity_label_synonym",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 213.15
+    },
+    {
+      "name": "quantity_plain_number",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 185.13
+    },
+    {
+      "name": "quantity_multiple_sizes",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 181.21
+    },
+    {
+      "name": "quantity_multiplication_symbol",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 185.71
+    },
+    {
+      "name": "metric_tonnes_equivalent",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 185.28
+    },
+    {
+      "name": "kilograms_long_unit",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 165.04
+    },
+    {
+      "name": "weight_decimal_equivalent",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 189.54
+    },
+    {
+      "name": "weight_spaced_thousands",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 159.85
+    },
+    {
+      "name": "different_quantity",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "MISMATCH",
+        "defect_fields": [
+          "container_count"
+        ]
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "MISMATCH",
+        "defect_fields": [
+          "container_count"
+        ]
+      },
+      "elapsed_ms": 163.13
+    },
+    {
+      "name": "different_weight",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "MISMATCH",
+        "defect_fields": [
+          "gross_weight_kg"
+        ]
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "MISMATCH",
+        "defect_fields": [
+          "gross_weight_kg"
+        ]
+      },
+      "elapsed_ms": 168.86
+    },
+    {
+      "name": "different_company",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "MISMATCH",
+        "defect_fields": [
+          "shipper"
+        ]
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "MISMATCH",
+        "defect_fields": [
+          "shipper"
+        ]
+      },
+      "elapsed_ms": 157.25
+    },
+    {
+      "name": "different_port",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "MISMATCH",
+        "defect_fields": [
+          "port_of_loading"
+        ]
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "MISMATCH",
+        "defect_fields": [
+          "port_of_loading"
+        ]
+      },
+      "elapsed_ms": 158.67
+    },
+    {
+      "name": "two_changes",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "MISMATCH",
+        "defect_fields": [
+          "container_count",
+          "gross_weight_kg"
+        ]
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "MISMATCH",
+        "defect_fields": [
+          "container_count",
+          "gross_weight_kg"
+        ]
+      },
+      "elapsed_ms": 156.29
+    },
+    {
+      "name": "missing_weight",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "elapsed_ms": 172.05
+    },
+    {
+      "name": "missing_notify_line",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "elapsed_ms": 166.63
+    },
+    {
+      "name": "ambiguous_decimal",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "elapsed_ms": 188.67
+    },
+    {
+      "name": "conflicting_totals",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "elapsed_ms": 173.04
+    },
+    {
+      "name": "explicit_total_over_item_weight",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 236.0
+    },
+    {
+      "name": "wrong_total_not_first_item",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "MISMATCH",
+        "defect_fields": [
+          "gross_weight_kg"
+        ]
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "MISMATCH",
+        "defect_fields": [
+          "gross_weight_kg"
+        ]
+      },
+      "elapsed_ms": 204.21
+    },
+    {
+      "name": "invoice_named_bl",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "elapsed_ms": 196.53
+    },
+    {
+      "name": "missing_attachment",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "elapsed_ms": 97.72
+    },
+    {
+      "name": "corrupted_pdf",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "elapsed_ms": 2483.77
+    },
+    {
+      "name": "text_pdf",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 432.84
+    },
+    {
+      "name": "word_table",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 368.75
+    },
+    {
+      "name": "spreadsheet_cells",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 440.99
+    },
+    {
+      "name": "spreadsheet_formula",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "elapsed_ms": 465.5
+    },
+    {
+      "name": "scan_requires_confirmation",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "elapsed_ms": 5153.58
+    },
+    {
+      "name": "reader_timeout",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "elapsed_ms": 0.24
+    },
+    {
+      "name": "forwarded_noise",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 204.52
+    },
+    {
+      "name": "misleading_subject",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 194.3
+    },
+    {
+      "name": "comparison_with_polite_notice",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 199.02
+    },
+    {
+      "name": "container_partial_parse",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "elapsed_ms": 185.28
+    },
+    {
+      "name": "unqualified_ton",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "elapsed_ms": 192.55
+    },
+    {
+      "name": "unit_in_label_mt",
+      "passed": true,
+      "expected": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "actual": {
+        "category": "BL_COMPARISON",
+        "status": "OK",
+        "defect_fields": []
+      },
+      "elapsed_ms": 205.58
+    }
+  ]
+}

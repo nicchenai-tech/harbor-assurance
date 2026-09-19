@@ -1,0 +1,10 @@
+{
+  "email_id": "demo-01",
+  "subject": "Carrier draft: container quantity differs",
+  "from": "operations@example.test",
+  "body": "Please compare the SI and draft BL and confirm all fields.",
+  "attachments": [
+    "attachments/demo-01-SI.txt",
+    "attachments/demo-01-BL.txt"
+  ]
+}

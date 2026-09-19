@@ -1,0 +1,7 @@
+{
+  "email_id": "demo-06",
+  "subject": "Document request pending",
+  "from": "operations@example.test",
+  "body": "Please send the draft BL for checking.",
+  "attachments": []
+}

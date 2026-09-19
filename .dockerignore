@@ -1,0 +1,11 @@
+.venv
+.git
+__pycache__
+.pytest_cache
+runtime*
+validation
+presentation
+docs/screenshots
+*.sqlite*
+*.zip
+.DS_Store

@@ -1,0 +1,22 @@
+{
+  "emails": 520,
+  "elapsed_seconds": 41.346,
+  "categories": {
+    "BL_COMPARISON": 220,
+    "INVOICE_QUERY": 75,
+    "SI_REQUEST": 125,
+    "GENERAL": 60,
+    "SPAM": 40
+  },
+  "states": {
+    "verified_ok": 63,
+    "classified": 300,
+    "awaiting_documents": 91,
+    "mismatch": 46,
+    "needs_review": 20
+  },
+  "schema_valid": true,
+  "cloud_model_calls": 0,
+  "ocr_documents": 6,
+  "note": "Local rules and native document parsers; optional local OCR suggestions require human confirmation."
+}

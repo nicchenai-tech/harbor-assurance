@@ -1,0 +1,16 @@
+{
+  "method": "Self-authored unseen semantic cases; frozen before first execution; no tuning on this suite.",
+  "engine_sha256": {
+    "__init__.py": "b8c0cfd49c69d23628f58459800a8fbc13601ce3702fa750102f4b9a7d42862e",
+    "classifier.py": "2bb9b700e0a94f1faa8a763e3f818a5e14b82b1ede6b4b4b308ca16bb982f0a9",
+    "cli.py": "c665a895305278f32bcaed3da3d58a673a10b7f71cf58b5d571e2b767b97db07",
+    "domain.py": "c24f99ff703443616820a4cb6ff3a599e0146e537976f3d8f2d7f6c066a2628c",
+    "extract.py": "dd1c935d7632885b1292ffe3ec5cbfbae953d7d3c7ef7b781c5ceb262db25b77",
+    "ocr.py": "ee9c9f885892beea31c9f6e7fc703c9ddb2c77a318c6844cc5daa9182860ea94",
+    "parsers.py": "6e626081beee8bf0161ddbf30af4027616b062b8eec801e2f5c5b693e402f025",
+    "pipeline.py": "4ad764c61acb71815d38964953d1c2cfa2b5d8639f44a5485e6e703868ee298e",
+    "server.py": "b3328947e3cddbbf21b3a1ecfd4fff5bb0573f54d7ef925a166b34664fcbfc64",
+    "store.py": "1082a9ab98b0643b55c9484edcde99699215dc82f7c2824a71683abdf9302f0d"
+  },
+  "suite_sha256": "76fd545fed3babb5c4a95c9b318c6b87bdb04cb4fb2634463120bf3ef51ce0bf"
+}

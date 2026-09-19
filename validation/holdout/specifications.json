@@ -1,0 +1,433 @@
+[
+  {
+    "name": "mixed_sizes_eight",
+    "changes": [
+      [
+        "8 x 40'HC",
+        "3 x 20'GP + 5 x 40'HC"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "uppercase_unit_and_quantity",
+    "changes": [
+      [
+        "8 x 40'HC",
+        "8 containers"
+      ],
+      [
+        "24,640 KG",
+        "24.640 MT"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "three_quantity_terms",
+    "changes": [
+      [
+        "8 x 40'HC",
+        "2 x 20'GP; 4 x 40'HC; 2 x 45'HC"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "new_weight_no_separator",
+    "changes": [
+      [
+        "24,640 KG",
+        "24640 KG"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "new_weight_tonnes",
+    "changes": [
+      [
+        "24,640 KG",
+        "24.64 tonnes"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "new_weight_label_mts",
+    "changes": [
+      [
+        "Gross Weight (KG): 24,640 KG",
+        "Gross Weight (MTS): 24.64"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "new_case_and_punctuation",
+    "changes": [
+      [
+        "Maple Fiber Co Ltd",
+        "MAPLE FIBER CO., LTD."
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "ports_long_labels",
+    "changes": [
+      [
+        "Port of Loading:",
+        "Load Port:"
+      ],
+      [
+        "Port of Discharge:",
+        "Discharge Port:"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "distinct_si_bl_titles",
+    "changes": [
+      [
+        "DRAFT BILL OF LADING",
+        "BILL OF LADING (DRAFT)"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "same_fields_reverse_order",
+    "changes": [],
+    "status": "OK",
+    "fields": [],
+    "reverse": true
+  },
+  {
+    "name": "new_identifier_and_filename",
+    "changes": [],
+    "status": "OK",
+    "fields": [],
+    "eid": "case-c0b8cb4a",
+    "names": [
+      "unrelated.txt",
+      "another.txt"
+    ]
+  },
+  {
+    "name": "word_fields_new_identity",
+    "changes": [],
+    "status": "OK",
+    "fields": [],
+    "format": "docx"
+  },
+  {
+    "name": "xlsx_new_identity",
+    "changes": [],
+    "status": "OK",
+    "fields": [],
+    "format": "xlsx"
+  },
+  {
+    "name": "pdf_new_identity",
+    "changes": [],
+    "status": "OK",
+    "fields": [],
+    "format": "pdf"
+  },
+  {
+    "name": "new_notify_diff",
+    "changes": [
+      [
+        "Notify Party: Bluewater Imports LLC",
+        "Notify Party: Greenwater Imports LLC"
+      ]
+    ],
+    "status": "MISMATCH",
+    "fields": [
+      "notify_party"
+    ]
+  },
+  {
+    "name": "new_consignee_diff",
+    "changes": [
+      [
+        "Consignee: Bluewater Imports LLC",
+        "Consignee: Bluewater Exports LLC"
+      ]
+    ],
+    "status": "MISMATCH",
+    "fields": [
+      "consignee"
+    ]
+  },
+  {
+    "name": "new_discharge_diff",
+    "changes": [
+      [
+        "Kobe, Japan",
+        "Osaka, Japan"
+      ]
+    ],
+    "status": "MISMATCH",
+    "fields": [
+      "port_of_discharge"
+    ]
+  },
+  {
+    "name": "numeric_rounding_not_allowed",
+    "changes": [
+      [
+        "24,640 KG",
+        "24640.01 KG"
+      ]
+    ],
+    "status": "MISMATCH",
+    "fields": [
+      "gross_weight_kg"
+    ]
+  },
+  {
+    "name": "seven_instead_eight",
+    "changes": [
+      [
+        "8 x 40'HC",
+        "7"
+      ]
+    ],
+    "status": "MISMATCH",
+    "fields": [
+      "container_count"
+    ]
+  },
+  {
+    "name": "three_real_defects",
+    "changes": [
+      [
+        "8 x 40'HC",
+        "9"
+      ],
+      [
+        "24,640 KG",
+        "26 MT"
+      ],
+      [
+        "Kobe, Japan",
+        "Osaka, Japan"
+      ]
+    ],
+    "status": "MISMATCH",
+    "fields": [
+      "port_of_discharge",
+      "container_count",
+      "gross_weight_kg"
+    ]
+  },
+  {
+    "name": "missing_shipper_value",
+    "changes": [
+      [
+        "Shipper: Maple Fiber Co Ltd",
+        "Shipper: TBD"
+      ]
+    ],
+    "status": "NEEDS_REVIEW",
+    "fields": []
+  },
+  {
+    "name": "blank_weight",
+    "changes": [
+      [
+        "24,640 KG",
+        "---"
+      ]
+    ],
+    "status": "NEEDS_REVIEW",
+    "fields": []
+  },
+  {
+    "name": "zero_container_count",
+    "changes": [
+      [
+        "8 x 40'HC",
+        "0"
+      ]
+    ],
+    "status": "NEEDS_REVIEW",
+    "fields": []
+  },
+  {
+    "name": "unknown_container_size",
+    "changes": [
+      [
+        "8 x 40'HC",
+        "8 x 99"
+      ]
+    ],
+    "status": "NEEDS_REVIEW",
+    "fields": []
+  },
+  {
+    "name": "partial_quantity_with_tba",
+    "changes": [
+      [
+        "8 x 40'HC",
+        "8 x 40'HC + TBA"
+      ]
+    ],
+    "status": "NEEDS_REVIEW",
+    "fields": []
+  },
+  {
+    "name": "weight_ambiguous_comma",
+    "changes": [
+      [
+        "24,640 KG",
+        "24,640,0 KG"
+      ]
+    ],
+    "status": "NEEDS_REVIEW",
+    "fields": []
+  },
+  {
+    "name": "weight_unit_unsupported",
+    "changes": [
+      [
+        "24,640 KG",
+        "24640 stones"
+      ]
+    ],
+    "status": "NEEDS_REVIEW",
+    "fields": []
+  },
+  {
+    "name": "weight_negative",
+    "changes": [
+      [
+        "24,640 KG",
+        "-24640 KG"
+      ]
+    ],
+    "status": "NEEDS_REVIEW",
+    "fields": []
+  },
+  {
+    "name": "multiple_total_candidates",
+    "changes": [],
+    "status": "NEEDS_REVIEW",
+    "fields": [],
+    "append": "Total Gross Weight: 24.640 MT\nTotal Gross Weight: 25 MT"
+  },
+  {
+    "name": "packing_list_with_correct_fields",
+    "changes": [
+      [
+        "DRAFT BILL OF LADING",
+        "PACKING LIST"
+      ]
+    ],
+    "status": "NEEDS_REVIEW",
+    "fields": []
+  },
+  {
+    "name": "two_si_documents",
+    "changes": [
+      [
+        "DRAFT BILL OF LADING",
+        "SHIPPING INSTRUCTION"
+      ]
+    ],
+    "status": "NEEDS_REVIEW",
+    "fields": []
+  },
+  {
+    "name": "certificate_with_correct_fields",
+    "changes": [
+      [
+        "DRAFT BILL OF LADING",
+        "CERTIFICATE OF ORIGIN"
+      ]
+    ],
+    "status": "NEEDS_REVIEW",
+    "fields": []
+  },
+  {
+    "name": "missing_second_source",
+    "changes": [],
+    "status": "NEEDS_REVIEW",
+    "fields": [],
+    "missing": true
+  },
+  {
+    "name": "broken_new_pdf",
+    "changes": [],
+    "status": "NEEDS_REVIEW",
+    "fields": [],
+    "format": "corrupt"
+  },
+  {
+    "name": "scan_new_identity",
+    "changes": [],
+    "status": "NEEDS_REVIEW",
+    "fields": [],
+    "format": "scan"
+  },
+  {
+    "name": "deadline_new_source",
+    "changes": [],
+    "status": "NEEDS_REVIEW",
+    "fields": [],
+    "timeout": true
+  },
+  {
+    "name": "quoted_invoice_noise",
+    "changes": [],
+    "status": "OK",
+    "fields": [],
+    "body": "Please verify draft BL against SI.\nFrom: old@example.test\nPlease cancel invoice 172."
+  },
+  {
+    "name": "misleading_si_subject",
+    "changes": [],
+    "status": "OK",
+    "fields": [],
+    "subject": "REQUEST SI",
+    "body": "Please compare the attached draft BL against the SI."
+  },
+  {
+    "name": "explicit_compare_then_maintenance",
+    "changes": [],
+    "status": "OK",
+    "fields": [],
+    "body": "Please verify draft BL against SI. Maintenance starts tomorrow."
+  },
+  {
+    "name": "word_multifield_difference",
+    "changes": [
+      [
+        "Maple Fiber Co Ltd",
+        "Maple Board Co Ltd"
+      ],
+      [
+        "24,640 KG",
+        "25 MT"
+      ]
+    ],
+    "status": "MISMATCH",
+    "fields": [
+      "shipper",
+      "gross_weight_kg"
+    ],
+    "format": "docx"
+  }
+]

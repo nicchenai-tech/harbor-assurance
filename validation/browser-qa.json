@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-18",
+  "browser": "Codex in-app browser",
+  "desktop_viewport": [
+    1280,
+    900
+  ],
+  "mobile_viewport": [
+    390,
+    844
+  ],
+  "mobile_document_width": 390,
+  "mobile_scroll_width": 390,
+  "two_rehearsals": [
+    {
+      "port": 8766,
+      "case": "demo-03",
+      "state": "verified_ok",
+      "version": 3,
+      "events": 2,
+      "retained": [
+        "BL.notify_party"
+      ]
+    },
+    {
+      "port": 8767,
+      "case": "demo-03",
+      "state": "verified_ok",
+      "version": 3,
+      "events": 2,
+      "retained": [
+        "BL.notify_party"
+      ]
+    }
+  ],
+  "checks": [
+    "Five-category routing visible",
+    "Actual 3-versus-4 container discrepancy",
+    "22 MT and22000 KG equivalent with rule evidence",
+    "Source line8 inspected for missing Notify Contact",
+    "Human correction moved review to verified, v2",
+    "Retry retained correction and produced v3",
+    "Source location visible",
+    "PDF OCR suggestions and original image inspected",
+    "Desktop and narrow-screen layout checked"
+  ],
+  "screenshots": [
+    "docs/screenshots/workspace.png",
+    "docs/screenshots/normalization.png",
+    "docs/screenshots/review-history.png",
+    "docs/screenshots/mobile-review.png"
+  ]
+}

@@ -1,0 +1,780 @@
+{
+  "design": "All 40 held-out semantic fixtures. Same extracted values. Baseline already abstains for missing/unreadable inputs and normalizes case/whitespace. Deterministic operations only; no inference-cost advantage claimed.",
+  "n": 40,
+  "baseline_exact": 22,
+  "full_exact": 40,
+  "baseline_false_alarms_on_clean": 8,
+  "full_false_alarms_on_clean": 0,
+  "baseline_unsafe_ok_on_review": 1,
+  "full_unsafe_ok_on_review": 0,
+  "clean_n": 17,
+  "review_n": 16,
+  "rows": [
+    {
+      "name": "mixed_sizes_eight",
+      "expected": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "container_count"
+        ]
+      },
+      "full": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "uppercase_unit_and_quantity",
+      "expected": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "container_count",
+          "gross_weight_kg"
+        ]
+      },
+      "full": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "three_quantity_terms",
+      "expected": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "container_count"
+        ]
+      },
+      "full": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "new_weight_no_separator",
+      "expected": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "gross_weight_kg"
+        ]
+      },
+      "full": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "new_weight_tonnes",
+      "expected": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "gross_weight_kg"
+        ]
+      },
+      "full": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "new_weight_label_mts",
+      "expected": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "gross_weight_kg"
+        ]
+      },
+      "full": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "new_case_and_punctuation",
+      "expected": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "shipper"
+        ]
+      },
+      "full": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "ports_long_labels",
+      "expected": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "full": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "distinct_si_bl_titles",
+      "expected": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "full": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "same_fields_reverse_order",
+      "expected": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "full": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "new_identifier_and_filename",
+      "expected": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "full": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "word_fields_new_identity",
+      "expected": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "full": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "xlsx_new_identity",
+      "expected": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "full": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "pdf_new_identity",
+      "expected": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "container_count"
+        ]
+      },
+      "full": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "new_notify_diff",
+      "expected": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "notify_party"
+        ]
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "notify_party"
+        ]
+      },
+      "full": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "notify_party"
+        ]
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "new_consignee_diff",
+      "expected": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "consignee"
+        ]
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "consignee"
+        ]
+      },
+      "full": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "consignee"
+        ]
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "new_discharge_diff",
+      "expected": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "port_of_discharge"
+        ]
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "port_of_discharge"
+        ]
+      },
+      "full": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "port_of_discharge"
+        ]
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "numeric_rounding_not_allowed",
+      "expected": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "gross_weight_kg"
+        ]
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "gross_weight_kg"
+        ]
+      },
+      "full": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "gross_weight_kg"
+        ]
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "seven_instead_eight",
+      "expected": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "container_count"
+        ]
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "container_count"
+        ]
+      },
+      "full": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "container_count"
+        ]
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "three_real_defects",
+      "expected": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "port_of_discharge",
+          "container_count",
+          "gross_weight_kg"
+        ]
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "port_of_discharge",
+          "container_count",
+          "gross_weight_kg"
+        ]
+      },
+      "full": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "port_of_discharge",
+          "container_count",
+          "gross_weight_kg"
+        ]
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "missing_shipper_value",
+      "expected": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "shipper"
+        ]
+      },
+      "full": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "blank_weight",
+      "expected": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "gross_weight_kg"
+        ]
+      },
+      "full": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "zero_container_count",
+      "expected": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "container_count"
+        ]
+      },
+      "full": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "unknown_container_size",
+      "expected": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "container_count"
+        ]
+      },
+      "full": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "partial_quantity_with_tba",
+      "expected": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "container_count"
+        ]
+      },
+      "full": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "weight_ambiguous_comma",
+      "expected": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "gross_weight_kg"
+        ]
+      },
+      "full": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "weight_unit_unsupported",
+      "expected": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "gross_weight_kg"
+        ]
+      },
+      "full": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "weight_negative",
+      "expected": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "gross_weight_kg"
+        ]
+      },
+      "full": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "multiple_total_candidates",
+      "expected": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "gross_weight_kg"
+        ]
+      },
+      "full": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "packing_list_with_correct_fields",
+      "expected": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "full": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "two_si_documents",
+      "expected": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "full": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "certificate_with_correct_fields",
+      "expected": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "full": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "missing_second_source",
+      "expected": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "full": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "broken_new_pdf",
+      "expected": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "full": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "scan_new_identity",
+      "expected": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "full": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline_correct": false,
+      "full_correct": true
+    },
+    {
+      "name": "deadline_new_source",
+      "expected": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "full": {
+        "status": "NEEDS_REVIEW",
+        "defect_fields": []
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "quoted_invoice_noise",
+      "expected": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "full": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "misleading_si_subject",
+      "expected": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "full": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "explicit_compare_then_maintenance",
+      "expected": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "full": {
+        "status": "OK",
+        "defect_fields": []
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    },
+    {
+      "name": "word_multifield_difference",
+      "expected": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "shipper",
+          "gross_weight_kg"
+        ]
+      },
+      "baseline": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "shipper",
+          "gross_weight_kg"
+        ]
+      },
+      "full": {
+        "status": "MISMATCH",
+        "defect_fields": [
+          "shipper",
+          "gross_weight_kg"
+        ]
+      },
+      "baseline_correct": true,
+      "full_correct": true
+    }
+  ]
+}

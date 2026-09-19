@@ -1,0 +1,429 @@
+[
+  {
+    "name": "renamed_sources",
+    "changes": [],
+    "status": "OK",
+    "fields": [],
+    "names": [
+      "carrier-copy.txt",
+      "customer-copy.txt"
+    ]
+  },
+  {
+    "name": "reversed_attachment_order",
+    "changes": [],
+    "status": "OK",
+    "fields": [],
+    "reverse": true
+  },
+  {
+    "name": "random_message_identifier",
+    "changes": [],
+    "status": "OK",
+    "fields": [],
+    "eid": "shipment-d27f-a16e"
+  },
+  {
+    "name": "case_variation",
+    "changes": [
+      [
+        "Ocean Supply Ltd",
+        "OCEAN SUPPLY LTD"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "extra_spaces",
+    "changes": [
+      [
+        "Cedar Export Ltd",
+        "Cedar   Export   Ltd"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "company_punctuation",
+    "changes": [
+      [
+        "Cedar Export Ltd",
+        "Cedar Export, Ltd."
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "notify_synonym",
+    "changes": [
+      [
+        "Notify Party:",
+        "Notify:"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "ports_synonyms",
+    "changes": [
+      [
+        "Port of Loading:",
+        "POL:"
+      ],
+      [
+        "Port of Discharge:",
+        "POD:"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "quantity_label_synonym",
+    "changes": [
+      [
+        "Container Count:",
+        "No. of Containers:"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "quantity_plain_number",
+    "changes": [
+      [
+        "5 x 20'GP",
+        "5"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "quantity_multiple_sizes",
+    "changes": [
+      [
+        "5 x 20'GP",
+        "2 x 20'GP + 3 x 40'HC"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "quantity_multiplication_symbol",
+    "changes": [
+      [
+        "5 x 20'GP",
+        "5 \u00d7 20\u2019GP"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "metric_tonnes_equivalent",
+    "changes": [
+      [
+        "18,500 KG",
+        "18.5 MT"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "kilograms_long_unit",
+    "changes": [
+      [
+        "18,500 KG",
+        "18500 kilograms"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "weight_decimal_equivalent",
+    "changes": [
+      [
+        "18,500 KG",
+        "18500.000 KG"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "weight_spaced_thousands",
+    "changes": [
+      [
+        "18,500 KG",
+        "18 500 KG"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "different_quantity",
+    "changes": [
+      [
+        "5 x 20'GP",
+        "6 x 20'GP"
+      ]
+    ],
+    "status": "MISMATCH",
+    "fields": [
+      "container_count"
+    ]
+  },
+  {
+    "name": "different_weight",
+    "changes": [
+      [
+        "18,500 KG",
+        "18,501 KG"
+      ]
+    ],
+    "status": "MISMATCH",
+    "fields": [
+      "gross_weight_kg"
+    ]
+  },
+  {
+    "name": "different_company",
+    "changes": [
+      [
+        "Cedar Export Ltd",
+        "Cedar Import Ltd"
+      ]
+    ],
+    "status": "MISMATCH",
+    "fields": [
+      "shipper"
+    ]
+  },
+  {
+    "name": "different_port",
+    "changes": [
+      [
+        "Singapore",
+        "Penang"
+      ]
+    ],
+    "status": "MISMATCH",
+    "fields": [
+      "port_of_loading"
+    ]
+  },
+  {
+    "name": "two_changes",
+    "changes": [
+      [
+        "5 x 20'GP",
+        "7 x 20'GP"
+      ],
+      [
+        "18,500 KG",
+        "19 MT"
+      ]
+    ],
+    "status": "MISMATCH",
+    "fields": [
+      "container_count",
+      "gross_weight_kg"
+    ]
+  },
+  {
+    "name": "missing_weight",
+    "changes": [
+      [
+        "18,500 KG",
+        "N/A"
+      ]
+    ],
+    "status": "NEEDS_REVIEW",
+    "fields": []
+  },
+  {
+    "name": "missing_notify_line",
+    "changes": [
+      [
+        "Notify Party: Ocean Supply Ltd\n",
+        ""
+      ]
+    ],
+    "status": "NEEDS_REVIEW",
+    "fields": []
+  },
+  {
+    "name": "ambiguous_decimal",
+    "changes": [
+      [
+        "18,500 KG",
+        "18,5 KG"
+      ]
+    ],
+    "status": "NEEDS_REVIEW",
+    "fields": []
+  },
+  {
+    "name": "conflicting_totals",
+    "changes": [],
+    "status": "NEEDS_REVIEW",
+    "fields": [],
+    "append": "Total Gross Weight: 18,500 KG\nTotal Gross Weight: 19,000 KG"
+  },
+  {
+    "name": "explicit_total_over_item_weight",
+    "changes": [
+      [
+        "Gross Weight (KG): 18,500 KG",
+        "Gross Weight (KG): 3700 KG\nTotal Gross Weight: 18,500 KG"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  },
+  {
+    "name": "wrong_total_not_first_item",
+    "changes": [
+      [
+        "Gross Weight (KG): 18,500 KG",
+        "Gross Weight (KG): 18,500 KG\nTotal Gross Weight: 19,000 KG"
+      ]
+    ],
+    "status": "MISMATCH",
+    "fields": [
+      "gross_weight_kg"
+    ]
+  },
+  {
+    "name": "invoice_named_bl",
+    "changes": [
+      [
+        "DRAFT BILL OF LADING",
+        "COMMERCIAL INVOICE"
+      ]
+    ],
+    "status": "NEEDS_REVIEW",
+    "fields": []
+  },
+  {
+    "name": "missing_attachment",
+    "changes": [],
+    "status": "NEEDS_REVIEW",
+    "fields": [],
+    "missing": true
+  },
+  {
+    "name": "corrupted_pdf",
+    "changes": [],
+    "status": "NEEDS_REVIEW",
+    "fields": [],
+    "format": "corrupt"
+  },
+  {
+    "name": "text_pdf",
+    "changes": [],
+    "status": "OK",
+    "fields": [],
+    "format": "pdf"
+  },
+  {
+    "name": "word_table",
+    "changes": [],
+    "status": "OK",
+    "fields": [],
+    "format": "docx"
+  },
+  {
+    "name": "spreadsheet_cells",
+    "changes": [],
+    "status": "OK",
+    "fields": [],
+    "format": "xlsx"
+  },
+  {
+    "name": "spreadsheet_formula",
+    "changes": [],
+    "status": "NEEDS_REVIEW",
+    "fields": [],
+    "format": "formula"
+  },
+  {
+    "name": "scan_requires_confirmation",
+    "changes": [],
+    "status": "NEEDS_REVIEW",
+    "fields": [],
+    "format": "scan"
+  },
+  {
+    "name": "reader_timeout",
+    "changes": [],
+    "status": "NEEDS_REVIEW",
+    "fields": [],
+    "timeout": true
+  },
+  {
+    "name": "forwarded_noise",
+    "changes": [],
+    "status": "OK",
+    "fields": [],
+    "body": "Please compare the attached SI and draft BL.\n----- Forwarded message -----\nYou won a lottery. Claim your prize."
+  },
+  {
+    "name": "misleading_subject",
+    "changes": [],
+    "status": "OK",
+    "fields": [],
+    "subject": "Invoice payment",
+    "body": "Please compare the SI and draft BL and verify all fields."
+  },
+  {
+    "name": "comparison_with_polite_notice",
+    "changes": [],
+    "status": "OK",
+    "fields": [],
+    "body": "Please compare the SI and draft BL. The office maintenance notice below is unrelated."
+  },
+  {
+    "name": "container_partial_parse",
+    "changes": [
+      [
+        "5 x 20'GP",
+        "5 x 20'GP plus unknown quantity"
+      ]
+    ],
+    "status": "NEEDS_REVIEW",
+    "fields": []
+  },
+  {
+    "name": "unqualified_ton",
+    "changes": [
+      [
+        "18,500 KG",
+        "18.5 tons"
+      ]
+    ],
+    "status": "NEEDS_REVIEW",
+    "fields": []
+  },
+  {
+    "name": "unit_in_label_mt",
+    "changes": [
+      [
+        "Gross Weight (KG): 18,500 KG",
+        "Gross Weight (MT): 18.5"
+      ]
+    ],
+    "status": "OK",
+    "fields": []
+  }
+]
