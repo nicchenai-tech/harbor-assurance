@@ -21,6 +21,9 @@ The guided cases show a real mismatch, equivalent KG/MT values, an unfamiliar la
 
 The repository includes a portable Docker image and `render.yaml`. Public mode serves only owned synthetic fixtures, disables uploads, rate-limits writes, resets on startup and exposes `/api/health`.
 
+**Live prototype:** https://harbor-assurance.onrender.com/  
+**Health check:** https://harbor-assurance.onrender.com/api/health
+
 ```sh
 docker compose -f compose.demo.yml up --build
 ```
@@ -76,6 +79,7 @@ The private workspace does not authenticate users, connect to a production mailb
 - Separately frozen authored suite: **40/40 on first run**.
 - Same-extraction comparison: direct equality **22/40**, full Harbor **40/40**.
 - Public-mode safety and workflow suite: **14/14 automated tests** plus a real browser review from report v1 to v2.
+- Public Render deployment: health check passed with **7 owned cases**, **Tesseract OCR**, uploads disabled and public-sandbox mode enabled; the scanned-PDF and review workflows were repeated over HTTPS.
 
 These are development and self-authored synthetic results, not production accuracy or a claim about unseen competitors. Run `python scripts/competition_gate.py` for the fail-closed evidence summary.
 

@@ -4,10 +4,10 @@ Target: complete essential work September 20 evening. September 21 is the intern
 
 ## Nic: minimum remaining actions
 
-- Deploy a safe demonstration build and provide a publicly accessible, functional URL. This is mandatory, not optional. Keep it available throughout preliminary judging and, conservatively, through September 26. Do not expose the unauthenticated full organizer-data workspace.
+- **Complete:** safe public prototype deployed at `https://harbor-assurance.onrender.com/`. Keep it available throughout preliminary judging and, conservatively, through September 26. Do not expose the unauthenticated full organizer-data workspace.
 - Show meaningful AI and cloud infrastructure integration. The rules do not prescribe a vendor or stack. Document exactly which capability is AI-backed and which cloud services host or execute the solution.
 - Record the under-five-minute demo using `DEMO_SCRIPT.md`. The working environment and script are prepared; no MP4 exists yet.
-- Publish the source to GitHub or GitLab with a clear setup README. The source archive is ready for review; nothing has been publicly published.
+- **Complete:** source published at `https://github.com/nicchenai-tech/harbor-assurance` with setup, deployment, validation and limitation documentation.
 - Upload the finished video to YouTube as Public or Unlisted. A private video is not evaluated. Keep it at or under five minutes; every additional 30 seconds costs one mark.
 - Publish the slides/documentation with public viewer access. It must cover architecture, implementation, challenges and roadmap.
 - Prepare Google Form answers for project description, problem-solution alignment, AI/cloud integration, user feedback/testing, coding challenges, success metrics and scalability.
@@ -27,7 +27,7 @@ Target: complete essential work September 20 evening. September 21 is the intern
 
 Use `Harbor_Source.zip`, not the whole workspace. The public-ready archive excludes the organizer's inbox, attachments, ground truth, generator source, runtime databases and competition screenshots. Do not upload the original Docker bundle. The private submission pack separately contains the deck and automatic predictions.
 
-Check README startup instructions, dependency lock, owned demo files, tests and known limitations. The project uses no paid API credentials. `.env.example` documents that no key is required. A repo link is not yet available.
+Check README startup instructions, dependency lock, owned demo files, tests and known limitations. The project uses no paid API credentials. `.env.example` documents that no key is required. Repository: `https://github.com/nicchenai-tech/harbor-assurance`.
 
 ## Evidence to include in judging materials
 
@@ -41,4 +41,4 @@ Check README startup instructions, dependency lock, owned demo files, tests and 
 
 ## Submission status
 
-Not submitted. The public repository destination exists at `https://github.com/nicchenai-tech/harbor-assurance`; source publication is being finalized. Remote deployment and uploaded video remain mandatory. After submission, save the portal receipt, final filenames, deployment health check and link permissions in this checklist.
+Not submitted. Public source and live prototype are complete. The final MP4, publicly viewable slide/document link, Google Form submission and receipt remain. After submission, save the portal receipt, final filenames, deployment health check and link permissions in this checklist.

@@ -6,7 +6,7 @@ Use English narration for judges. The owned synthetic fixtures make the actions 
 
 ## Setup
 
-1. Prefer the submitted public prototype URL. Press **Reset sandbox** so the review case starts unresolved. If the deployment is unavailable, run `.venv/bin/python -m harbor.server --data demo-data --runtime runtime-recording-01 --port 8766` locally.
+1. Use `https://harbor-assurance.onrender.com/`. Press **Reset sandbox** so the review case starts unresolved. If the deployment is unavailable, run `.venv/bin/python -m harbor.server --data demo-data --runtime runtime-recording-01 --port 8766` locally.
 2. Verify the public URL in an incognito window before recording. Do not expose organizer inputs or ground truth.
 3. Use a desktop browser, 1280×900 or wider. Set zoom to 100%. Hide personal tabs and notifications. Use the operating system's screen recorder and a microphone.
 4. Have `presentation/Harbor_Pitch.pdf` and `docs/VALIDATION.md` ready. Aim for 4m30s, allow up to 4m50s. Official maximum is five minutes.

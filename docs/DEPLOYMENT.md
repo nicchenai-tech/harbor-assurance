@@ -1,5 +1,10 @@
 # Public deployment
 
+Live deployment: https://harbor-assurance.onrender.com/  
+Health endpoint: https://harbor-assurance.onrender.com/api/health
+
+Verified September 19, 2026: the free Singapore service built from public commit `25f68b3`, returned seven owned cases with `ocr_backend=tesseract`, disabled uploads, completed the v1→v2 human-review flow, extracted the scanned-PDF evidence and restored the shared sandbox.
+
 ## Safety boundary
 
 Deploy only the repository's owned `demo-data`. The public image intentionally excludes organizer/customer data, ground truth, generator code and existing runtime databases. Public mode disables document uploads, rate-limits writes, resets on each process start and offers a manual sandbox reset. It is not a production authentication model.
@@ -35,4 +40,4 @@ The same Dockerfile can be built and deployed as a public Cloud Run service. All
 - Upload is absent and the upload API returns 403.
 - Reset restores report v1.
 - Repository, slides, video and demo links work in a signed-out browser.
-- Keep the service available through September26.
+- Keep the service available through September 26.
