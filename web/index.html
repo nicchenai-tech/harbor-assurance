@@ -1,16 +1,139 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Harbor — Shipping verification</title><link rel="stylesheet" href="/style.css"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f2540'/%3E%3Cpath d='M18 16v32M46 16v32M18 32h28' stroke='%235de0c2' stroke-width='7'/%3E%3C/svg%3E"></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Harbor — Shipping Document Assurance</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23121B2E'/%3E%3Cpath d='M18 15v34M46 15v34M18 32h28' stroke='%23F19A21' stroke-width='7'/%3E%3C/svg%3E">
+</head>
 <body>
-<aside class="rail"><div class="brand"><span class="brand-mark">H</span><span>Harbor<small>DOCUMENT ASSURANCE</small></span></div>
-<div class="rail-label">WORKSPACE</div><button class="nav active" data-filter="all">▤ <span>Verification inbox</span><span id="total" class="nav-count">—</span></button><button class="nav" data-filter="needs_review">◇ <span>Human review</span><span id="review-count" class="nav-count">—</span></button><button class="nav" data-filter="mismatch">≠ <span>Discrepancies</span></button><button class="nav" data-filter="awaiting_documents">◷ <span>Waiting for documents</span></button>
-<div class="rail-bottom"><span class="local-indicator"></span> <span id="runtime-mode">Evidence workspace</span><p id="runtime-note">Loading runtime safeguards…</p><a href="/api/export?original=true">Export automatic predictions ↗</a><a href="/api/export?original=false">Export reviewed predictions ↗</a><div class="user"><span>NR</span><div>Shipping operations<small>Reviewer workspace</small></div></div></div></aside>
-<main><header class="topbar"><div><span class="eyebrow">OPERATIONS / DOCUMENT CHECKS</span><h1>Verification inbox</h1></div><div class="top-actions"><span class="dataset-label">Averis × Monash 2026</span><button id="refresh" class="button secondary">↻ Refresh</button></div></header>
-<section class="metrics" aria-label="Inbox totals"><button data-filter="all"><span>Emails processed</span><strong id="m-total">—</strong><small>All inbox categories</small></button><button data-filter="verified_ok"><span>Verified matches</span><strong id="m-ok">—</strong><small>All seven fields checked</small></button><button data-filter="mismatch"><span>Discrepancies</span><strong id="m-mismatch">—</strong><small>Differences found</small></button><button data-filter="needs_review"><span>Human review</span><strong id="m-review">—</strong><small>A decision needs evidence</small></button><button data-filter="awaiting_documents"><span>Waiting</span><strong id="m-wait">—</strong><small>Documents not yet received</small></button></section>
-<section class="assurance" aria-label="Validation and demo guide"><div class="assurance-proof"><span class="eyebrow">VALIDATION EVIDENCE</span><strong>1.000 official development score</strong><span>46/46 positive defect sets · 40/40 frozen semantic suite</span></div><div class="scenario-guide"><span>Judge the hard cases:</span><button data-scenario="demo-01">1 · Real mismatch</button><button data-scenario="demo-02">2 · Equivalent units</button><button data-scenario="demo-03">3 · Human review</button><button data-scenario="demo-07">4 · Scanned AI</button><button id="reset-demo" class="reset-demo" hidden>Reset sandbox</button></div><div class="ai-status"><span class="eyebrow">HYBRID ASSURANCE</span><strong id="ocr-status">AI OCR + deterministic checks</strong><span>Uncertain evidence never auto-clears</span></div></section>
-<section class="workspace"><section class="inbox-pane"><div class="list-controls"><label for="search" class="sr-only">Search emails</label><input id="search" placeholder="Search email, sender or subject…" type="search"><div class="filter-line"><select id="filter" aria-label="Filter cases"><option value="all">All emails</option><option value="mismatch">Discrepancies</option><option value="needs_review">Human review</option><option value="verified_ok">Verified matches</option><option value="awaiting_documents">Waiting for documents</option><option value="classified">Classified only</option></select><span id="result-count"></span></div></div><div id="case-list" class="case-list" aria-label="Emails"></div></section>
-<section id="detail" class="detail"><div class="empty">Loading verified results…</div></section></section>
-</main>
-<dialog id="evidence-dialog"><div class="dialog-head"><div><span class="eyebrow">SOURCE EVIDENCE</span><h2 id="evidence-title"></h2></div><button class="icon-button" id="close-evidence" aria-label="Close evidence">×</button></div><div id="evidence-content"></div></dialog>
-<dialog id="review-dialog"><form id="review-form"><div class="dialog-head"><div><span class="eyebrow">HUMAN REVIEW</span><h2 id="review-title">Review field</h2></div><button type="button" class="icon-button" id="close-review" aria-label="Close review">×</button></div><p class="muted">Use the source document to confirm or correct the value. A new report version will preserve this decision.</p><label>Document<select name="role" id="review-role"><option>SI</option><option>BL</option></select></label><label>Field<select name="field" id="review-field"></select></label><label>Confirmed value<textarea name="value" id="review-value" rows="3" required></textarea></label><div id="review-source" class="source-note"></div><label>Source location<input name="source_location" id="source-location" placeholder="Page, line or cell you checked"></label><label>Your name<input name="reviewer" id="reviewer-name" value="Reviewer" required></label><label>Reason<textarea name="reason" rows="2" placeholder="What did you verify in the source?" required></textarea></label><div class="form-error" id="review-error" role="alert"></div><button class="button primary" type="submit">Save & recompute report</button></form></dialog>
-<dialog id="upload-dialog"><form id="upload-form"><div class="dialog-head"><div><span class="eyebrow">DOCUMENT UPDATE</span><h2>Add or replace a document</h2></div><button type="button" class="icon-button" id="close-upload" aria-label="Close upload">×</button></div><p class="muted">The original source remains in the audit history. Changed source values require a fresh review.</p><label>Replace<select name="replace_file" id="replace-file"><option value="">Add a missing document</option></select></label><label>Document<input name="file" type="file" accept=".txt,.pdf,.docx,.xlsx" required></label><label>Your name<input name="reviewer" value="Reviewer" required></label><label>Reason<textarea name="reason" required placeholder="Why is this document being added or replaced?"></textarea></label><div class="form-error" id="upload-error" role="alert"></div><button class="button primary" type="submit">Upload & recheck</button></form></dialog>
-<div id="toast" role="status"></div><script src="/app.js"></script></body></html>
+  <aside class="rail">
+    <div class="brand">
+      <span class="brand-mark">H</span>
+      <span>Harbor<small>SHIPPING DOCUMENT ASSURANCE</small></span>
+    </div>
+    <div class="rail-label">OPERATIONS</div>
+    <button class="nav active" data-filter="all"><span class="nav-icon">⌂</span><span>Overview</span><span id="total" class="nav-count">—</span></button>
+    <button class="nav" data-filter="verified_ok"><span class="nav-icon">✓</span><span>Verified</span></button>
+    <button class="nav" data-filter="mismatch"><span class="nav-icon">×</span><span>Issues Found</span></button>
+    <button class="nav" data-filter="needs_review"><span class="nav-icon">!</span><span>Needs Review</span><span id="review-count" class="nav-count">—</span></button>
+    <button class="nav" data-filter="awaiting_documents"><span class="nav-icon">◷</span><span>Waiting</span></button>
+    <div class="rail-label secondary-label">ASSURANCE</div>
+    <button class="nav" data-scenario="demo-07"><span class="nav-icon">▧</span><span>Scanned Documents</span></button>
+    <button class="nav" id="audit-nav"><span class="nav-icon">↺</span><span>Audit History</span></button>
+    <div class="rail-bottom">
+      <div class="runtime-card">
+        <span class="local-indicator"></span><strong id="runtime-mode">Public Sandbox</strong>
+        <p id="runtime-note">Loading safeguards…</p>
+      </div>
+      <a href="/api/export?original=true">Export automatic predictions ↗</a>
+      <a href="/api/export?original=false">Export reviewed predictions ↗</a>
+      <div class="user"><span>HA</span><div>Harbor Assurance<small>Reviewer workspace</small></div></div>
+    </div>
+  </aside>
+  <main>
+    <header class="topbar">
+      <div>
+        <span class="eyebrow">AVERIS × MONASH HACKATHON 2026</span>
+        <h1>Shipping Document Assurance</h1>
+        <p class="lede">Verify Shipping Instructions against draft Bills of Lading with evidence-backed decisions.</p>
+      </div>
+      <div class="top-actions">
+        <span class="system-chip"><i></i>Public Sandbox</span>
+        <span class="system-chip">Cloud OCR</span>
+        <span class="system-chip healthy">Healthy</span>
+        <button id="refresh" class="button secondary">↻ Refresh</button>
+      </div>
+    </header>
+    <section class="metrics" aria-label="Operational states">
+      <button class="metric verified" data-filter="verified_ok"><span>Verified</span><strong id="m-ok">—</strong><small>No discrepancy detected</small></button>
+      <button class="metric issue" data-filter="mismatch"><span>Issues Found</span><strong id="m-mismatch">—</strong><small>Confirmed field mismatches</small></button>
+      <button class="metric review" data-filter="needs_review"><span>Needs Review</span><strong id="m-review">—</strong><small>Human confirmation required</small></button>
+      <button class="metric waiting" data-filter="awaiting_documents"><span>Waiting</span><strong id="m-wait">—</strong><small>Missing or incomplete documents</small></button>
+    </section>
+    <section class="overview-grid">
+      <div class="try-panel">
+        <div class="section-heading">
+          <div><span class="eyebrow orange">GUIDED DEMO</span><h2>Try Harbor</h2><p>Explore three common shipping-document scenarios.</p></div>
+          <span class="processed"><strong id="m-total">—</strong> demo emails processed</span>
+        </div>
+        <div class="scenario-cards">
+          <button class="scenario-card match" data-scenario="demo-02"><span class="scenario-number">01</span><span class="scenario-icon">✓</span><strong>Clean Match</strong><small>See Harbor verify a correct shipment.</small><b>Open scenario →</b></button>
+          <button class="scenario-card mismatch" data-scenario="demo-01"><span class="scenario-number">02</span><span class="scenario-icon">×</span><strong>Find a Discrepancy</strong><small>Detect a mismatch and inspect the supporting evidence.</small><b>Open scenario →</b></button>
+          <button class="scenario-card human" data-scenario="demo-03"><span class="scenario-number">03</span><span class="scenario-icon">!</span><strong>Needs Human Review</strong><small>See how Harbor handles an uncertain decision.</small><b>Open scenario →</b></button>
+        </div>
+      </div>
+      <aside class="assurance-panel">
+        <span class="eyebrow">VALIDATION EVIDENCE</span>
+        <strong>Validated in the organizer-provided development environment</strong>
+        <div class="proof-row"><b>1.000</b><span>classification<br>macro-F1</span></div>
+        <ul><li>46/46 positive defect sets</li><li>20/20 required reviews escalated</li><li>14/14 automated workflow tests</li></ul>
+        <p>Development results, not a production-accuracy claim.</p>
+      </aside>
+    </section>
+    <section class="recent-section" aria-labelledby="recent-title">
+      <div class="section-heading compact">
+        <div><span class="eyebrow">ACTIVE WORK</span><h2 id="recent-title">Recent Cases</h2></div>
+        <button id="reset-demo" class="text-action" hidden>Reset synthetic sandbox</button>
+      </div>
+      <div class="recent-table" role="table" aria-label="Recent cases">
+        <div class="recent-head" role="row"><span>Case / Shipment</span><span>Status</span><span>Scenario / Reason</span><span>Version</span><span>Action</span></div>
+        <div id="recent-cases"></div>
+      </div>
+    </section>
+    <section id="verification-workspace" class="work-section">
+      <div class="section-heading work-heading">
+        <div><span class="eyebrow orange">VERIFICATION WORKSPACE</span><h2>Shipping Instruction vs Draft Bill of Lading</h2><p>Seven required fields, explicit decisions, and source evidence.</p></div>
+        <div class="ocr-note"><strong id="ocr-status">Cloud OCR · human confirmation required</strong><span>OCR suggestions never clear a shipment automatically.</span></div>
+      </div>
+      <section class="workspace">
+        <section class="inbox-pane">
+          <div class="list-controls">
+            <label for="search" class="sr-only">Search cases</label>
+            <input id="search" placeholder="Search case, sender or subject…" type="search">
+            <div class="filter-line">
+              <select id="filter" aria-label="Filter cases"><option value="all">All cases</option><option value="verified_ok">Verified</option><option value="mismatch">Issues Found</option><option value="needs_review">Needs Review</option><option value="awaiting_documents">Waiting</option><option value="classified">Classified only</option></select>
+              <span id="result-count"></span>
+            </div>
+          </div>
+          <div id="case-list" class="case-list" aria-label="Cases"></div>
+        </section>
+        <section id="detail" class="detail"><div class="empty">Loading verified results…</div></section>
+      </section>
+    </section>
+  </main>
+  <dialog id="evidence-dialog">
+    <div class="dialog-head"><div><span class="eyebrow orange">SOURCE EVIDENCE</span><h2 id="evidence-title"></h2></div><button class="icon-button" id="close-evidence" aria-label="Close evidence">×</button></div>
+    <div id="evidence-content"></div>
+  </dialog>
+  <dialog id="review-dialog">
+    <form id="review-form">
+      <div class="dialog-head"><div><span class="eyebrow orange">HUMAN-IN-THE-LOOP</span><h2 id="review-title">Needs Human Review</h2></div><button type="button" class="icon-button" id="close-review" aria-label="Close review">×</button></div>
+      <div class="review-explainer"><strong>Why Harbor needs you</strong><p id="review-why">Harbor could not confidently resolve this field from the source document.</p></div>
+      <div id="review-source" class="source-note"></div>
+      <div class="review-grid"><label>Document<select name="role" id="review-role"><option>SI</option><option>BL</option></select></label><label>Field<select name="field" id="review-field"></select></label></div>
+      <label>Correct value<textarea name="value" id="review-value" rows="2" required></textarea></label>
+      <label>Source location<input name="source_location" id="source-location" placeholder="Page, line or cell you checked"></label>
+      <label>Reviewer<input name="reviewer" id="reviewer-name" value="Reviewer" required></label>
+      <label>Reason<textarea name="reason" rows="2" placeholder="What did you verify in the source?" required></textarea></label>
+      <div class="form-error" id="review-error" role="alert"></div>
+      <div class="dialog-actions"><button class="button secondary" type="button" id="cancel-review">Cancel</button><button class="button primary" type="submit">Confirm &amp; Save Review</button></div>
+    </form>
+  </dialog>
+  <dialog id="upload-dialog">
+    <form id="upload-form">
+      <div class="dialog-head"><div><span class="eyebrow orange">DOCUMENT UPDATE</span><h2>Add or replace a document</h2></div><button type="button" class="icon-button" id="close-upload" aria-label="Close upload">×</button></div>
+      <p class="muted">The original source remains in Audit History. Changed source values require a fresh review.</p>
+      <label>Replace<select name="replace_file" id="replace-file"><option value="">Add a missing document</option></select></label>
+      <label>Document<input name="file" type="file" accept=".txt,.pdf,.docx,.xlsx" required></label>
+      <label>Reviewer<input name="reviewer" value="Reviewer" required></label>
+      <label>Reason<textarea name="reason" required placeholder="Why is this document being added or replaced?"></textarea></label>
+      <div class="form-error" id="upload-error" role="alert"></div>
+      <button class="button primary full" type="submit">Upload &amp; Run Verification Again</button>
+    </form>
+  </dialog>
+  <div id="toast" role="status"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

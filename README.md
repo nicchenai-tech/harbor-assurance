@@ -15,7 +15,7 @@ bash scripts/run-demo.sh
 
 Open **http://127.0.0.1:8766**. This uses seven owned synthetic demonstration emails, including image-only PDFs for OCR. Runtime data is separate from the inputs.
 
-The guided cases show a real mismatch, equivalent KG/MT values, an unfamiliar label that needs a person, and scanned documents whose OCR evidence cannot auto-clear a shipment.
+The Overview makes Verified, Issues Found, Needs Review and Waiting immediately visible. **Try Harbor** opens three guided paths: Clean Match, Find a Discrepancy and Needs Human Review. Scanned Documents demonstrates the Cloud OCR safety boundary.
 
 ## Deploy the public sandbox
 
@@ -89,7 +89,7 @@ These are development and self-authored synthetic results, not production accura
 - `web/`: browser workspace, no external frontend assets or analytics.
 - `demo-data/`: owned fixtures and corrected carrier document for rehearsal.
 - `docs/DESIGN.md`: architecture, rule boundaries and tradeoffs.
-- `docs/DEMO_SCRIPT.md`: 4m30s video script and repeatable actions.
+- `docs/DEMO_SCRIPT_v3.md`: final 4m30s recording script matching the deployed UI.
 - `docs/COMPETITIVE_SCORECARD.md`: judge-facing advantage and proof matrix.
 - `docs/USER_TEST_PROTOCOL.md`: first-time reviewer test and acceptance criteria.
 - `docs/DEPLOYMENT.md`: public sandbox deployment and security checks.

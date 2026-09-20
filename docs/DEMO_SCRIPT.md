@@ -1,5 +1,7 @@
 # 4 minute 30 second demo recording
 
+> The current recording sequence and exact final UI wording are maintained in [DEMO_SCRIPT_v3.md](DEMO_SCRIPT_v3.md). Use v3 for the submission recording.
+
 Status: recording-ready script and local environment. An MP4 has **not** been recorded. The current browser tools expose screenshots and interactions, but no screen-recording capability. Nic or the helper must capture the final recording and check its duration/audio.
 
 Use English narration for judges. The owned synthetic fixtures make the actions reproducible. Clearly say the inbox results are preprocessed; field review and report recomputation happen during the demonstration. Never claim the synthetic fixtures are real customer shipments.

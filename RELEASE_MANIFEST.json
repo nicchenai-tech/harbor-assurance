@@ -3,7 +3,7 @@
   ".env.example": "8aef48ce0cae2459c99746535edf364cc9f9e1df76c45ed86ed19b96a30471d3",
   ".gitignore": "8d41e91da0f00d359995f6b90074c4ad184c63bdc452f10cb202011385dabc60",
   "Dockerfile": "54426f82531a32fcf878e8a988691ca84f8bae81893ad3c3c7dfd7b3ebeeccd2",
-  "README.md": "04b46688aa540e7ea6d78ac5104c48a672b68758d691b9e61745dc7c51c4ed42",
+  "README.md": "edf0c008803e8984e5478edea3a9dccf9cc2efb33d0d12cce051559958485e4e",
   "compose.demo.yml": "2128e2dc44af9567e9eb1ff42457368cef1dae44436ebccb8e353b90aab2d861",
   "demo-data/attachments/demo-01-BL.txt": "3b7494a86016ef27278f2595e4333779e49b101a4abc3269b08603c16ab196c4",
   "demo-data/attachments/demo-01-SI.txt": "f498768c0a11c17d6532dbafad8c5ff1f5629974897f328928e7cbd769374815",
@@ -22,7 +22,8 @@
   "demo-data/inbox/demo-06.json": "7e34c21d32e0cd778d3c91ae8db3acf50860e502a9672cd86b29da7b6b01cfa0",
   "demo-data/inbox/demo-07.json": "9466c6146ba5bab7e8854383b148973be7f37747b808e64f8999379a78c2b2e0",
   "docs/COMPETITIVE_SCORECARD.md": "cfc26bd4b9373952ad79f62f83e9e310e0bb9d63f9c5faf556753983f6ac87f4",
-  "docs/DEMO_SCRIPT.md": "8e554f8ff58fa84280277e33412a35197807aea6b988dc93637150c2cc9ff4d3",
+  "docs/DEMO_SCRIPT.md": "8d42e3e3faebcbed63df04ddd1ba1f3f5479a0688251b872e24fbbbb9e024947",
+  "docs/DEMO_SCRIPT_v3.md": "2a410f9ef7ec883d6241edcea0dbbc87911d4376d8ab07fc41a95b318b603bf6",
   "docs/DEPLOYMENT.md": "7741c292d157cde05bebade25138b33fb50d0a17450049804c65f26a0a54b556",
   "docs/DESIGN.md": "7475d5c23bb0638b7d00b20492f38bc567a4b2a9c5a786ef175cd503384463f4",
   "docs/FINAL_PITCH.md": "e6ccd49df043cafe930924ee69adfc5b982a6ad308221a58891ab19540f05cfa",
@@ -68,7 +69,7 @@
   "validation/variants/latest-run.json": "c3621a73f90991a9ef3db58c57683099ca495feb51e604451c2b6aa0be5a0d70",
   "validation/variants/specifications.json": "086cbbc73464b58e25712f3409e07f1d6f6026d89ae0bc5dfb5b7d744bea805f",
   "validation/workflow-tests.xml": "6f97c6f2b13ec13e301f4b9568973932feb696f511ee9ffe43fef6103f5c8d06",
-  "web/app.js": "763341a0f6a1f53b86d1eca966a938b10ff8b912469012f4e5515823c2adec0a",
-  "web/index.html": "e6083e32725cfd36d55b275793a91a00bb7afa736e0b0b471e70930c4e6d9762",
-  "web/style.css": "b3b882d340b364ae44f79203544744bb0477e81370863ede5a4626229b70ccc3"
+  "web/app.js": "fcb7653f700c2c9d7b29e14a5ad7f0f21c90bcf3ef1d0c1a1470dbdf10b80f60",
+  "web/index.html": "197e54070ab92312ac9b78a2e130dafa3b920c11d14557bbd28edd7a157e5952",
+  "web/style.css": "06c5e6f149da8634064f5112ff8f03435a6c7e732f95287851d6299fafbb199e"
 }
